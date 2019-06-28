@@ -1,0 +1,101 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-panel">
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_small-appmsg">
+          <view class="weui-cells weui-cells_in-small-appmsg">
+            <view class="weui-cell weui-cell_access">
+              <view class="weui-cell__hd">
+                <image src="/images/icon/user.png" style="width: 20px;height: 20px;margin-right: 5px" hover-class="weui-cell_active" bindtap='userCenter'/>
+              </view>
+              <view class="weui-cell__bd weui-cell_primary">
+                <view class='title'>同城跑腿 1小时必达</view>
+              </view>
+              <view class="weui-cell__ft weui-cell__ft_in-access" hover-class="weui-cell_active">{{localCity}}</view>
+            </view>
+
+          </view>
+        </view>
+      </view>
+
+    </view>
+    <map  id='myMap'class='mainmap' latitude='{{realAddress.lat}}' longitude='{{realAddress.lng}}' scale="16"  markers='{{markers}}' bindregionchange="regionchange" show-location='true' ><cover-view class='refresh'><cover-image  bindtap='refresh' src='/images/refresh.png' style='width:30px;height:30spx;'></cover-image></cover-view></map>
+    <view class="page_bd">
+      <view class="weui-tab">
+        <view class="weui-navbar">
+          <block wx:for="{{tabs}}" wx:key="*this">
+            <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+              <view class="weui-navbar__title">{{item}}</view>
+            </view>
+          </block>
+          <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+        </view>
+        <view class="weui-tab__panel">
+          <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+            <view class="page">
+              <view class="page__bd">
+                <view class="weui-panel">
+
+                  <view class="weui-panel__bd">
+                    <view class="weui-media-box weui-media-box_small-appmsg">
+                      <view class="weui-cells weui-cells_in-small-appmsg">
+                        <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='fahuodizhi'>
+                          <view class="weui-cell__hd">
+                            <image src="/images/icon/start.png" style="width: 20px;height: 20px;margin-right: 5px" />
+                          </view>
+                          <view class="weui-cell__bd weui-cell_primary">
+                            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                              <view class="weui-media-box__title">{{dizhi1}}</view>
+                              <view class="weui-media-box__desc">{{information1}}</view>
+                            </view>
+                          </view>
+                          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </view>
+                        <navigator url="/pages/shouhuo/shouhuo" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                          <view class="weui-cell__hd">
+                            <image src="/images/icon/end.png" style="width: 20px;height: 20px;margin-right: 5px" />
+                          </view>
+                          <view class="weui-cell__bd weui-cell_primary">
+                            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                              <view class="weui-media-box__title">{{dizhi2}}</view>
+                              <view class="weui-media-box__desc">{{information2}}</view>
+                            </view>
+                          </view>
+                          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                        <navigator url="/pages/yaoqiu/yaoqiu" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                          <view class="weui-cell__hd">
+                            <image src="/images/icon/weight.png" style="width: 20px;height: 20px;margin-right: 5px" />
+                          </view>
+                          <view class="weui-cell__bd weui-cell_primary">
+                            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                              <view class="weui-media-box__title">{{thingType}}</view>
+                              <view class="weui-media-box__desc">{{weight}}</view>
+                            </view>
+                          </view>
+                          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+          <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='page_hd'>
+    <view class="weui-footer">
+      <view class="weui-footer__links">
+        <view class="weui-footer__link" bindtap="show">计价规则</view>
+      </view>
+      <view class="weui-footer__text">Copyright © 2018-2020 XXX</view>
+    </view>
+  </view>
+        
+</view>

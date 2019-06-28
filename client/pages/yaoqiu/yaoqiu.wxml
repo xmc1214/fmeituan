@@ -1,0 +1,23 @@
+<!--pages/yaoqiu/yaoqiu.wxml-->
+<view class="page">
+<view class="page__bd">
+ <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:key="*this">
+                <view class="weui-grid" catchtap='select' data-item='{{item}}' >
+                    <image class="weui-grid__icon" src="{{item.image}}" />
+                    <view class="weui-grid__label">{{item.name}}</view>
+                </view>
+            </block>
+        </view>
+</view>
+    <view class="page__hd">
+        <view class="page__title">重量</view>
+        <view class="page__desc">{{weight}}公斤</view>
+    </view>
+
+    <view class="page__bd page__bd_spacing">
+        <slider show-value value="0"  selected-color='#FDA81C' min='4'max='20' bindchange='slider' bindchanging='slider2'/>
+         <button id="queding" class="weui-btn" type='primary' bindtap='submit'>确定</button>
+    </view>
+       
+</view>

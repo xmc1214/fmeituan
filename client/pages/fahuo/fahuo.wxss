@@ -1,0 +1,13 @@
+/* pages/fahuo/fahuo.wxss */
+#addAddress{
+  width:95%;
+  position:fixed;
+  top:540px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.weui-cell__bd span{
+  position: relative;
+  bottom: 15px;
+  left: -10px;
+}

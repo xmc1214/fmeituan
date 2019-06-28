@@ -1,0 +1,7 @@
+/* pages/login/login.wxss */
+#queding{
+  background: #FDA81C;
+}
+#shouquan{
+  margin-top: 100rpx;
+}

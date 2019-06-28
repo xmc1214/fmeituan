@@ -1,0 +1,22 @@
+<!--pages/fahuo/fahuo.wxml-->
+<view class="page">
+<view class='page_bd'>
+ <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">常用地址</view>
+            <view class="weui-panel__bd" wx:for="{{address}}" wx:key="*this">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{item.provinceName}}{{item.cityName}}{{item.countyName}}{{item.detailInfo}}</view>
+                    <view class="weui-media-box__desc">{{item.userName}} {{item.telNumber}}</view>
+                </view>
+              
+            </view>
+            
+              <view  id="addAddress" class="weui-panel__ft"  bindtap='chooseAddress'>
+                <view class="weui-cell weui-cell_access weui-cell_link">
+                    <view class="weui-cell__bd"><image src="/images/icon/tianjia.png" style="width: 40px;height: 40px;margin-right: 5px"   /><span>添加发件地址</span></view>
+                   
+                </view>
+            </view>
+        </view>
+</view>
+</view>

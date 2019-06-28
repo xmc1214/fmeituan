@@ -1,0 +1,88 @@
+<!--pages/userCenter/user.wxml-->
+<view class="page">
+<view class="page_bd">
+  <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">用户信息</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{User.avatarUrl}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{User.nickName}}</view>
+                       
+                    </view>
+                </view>
+              
+            </view>
+            
+        </view>
+         <view class="weui-panel">
+       
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells weui-cells_in-small-appmsg">
+                        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="/images/icon/order.png" style="width: 15px;height: 15px;margin-right: 5px;margin-top:5px;" /></view>
+                            <view id="list" class="weui-cell__bd weui-cell_primary">
+                                <view>我的订单</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="/images/icon/redbag.png" style="width: 15px;height: 15px;margin-right: 5px;margin-top:5px;" /></view>
+                            <view id="list" class="weui-cell__bd weui-cell_primary">
+                                <view>我的红包</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                          <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="/images/icon/newredbag.png" style="width: 15px;height: 15px;margin-right: 5px;margin-top:5px" /></view>
+                            <view id="list" class="weui-cell__bd weui-cell_primary">
+                                <view>邀请好友送红包</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                          <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="/images/icon/advice.png" style="width: 15px;height: 15px;margin-right: 5px;margin-top:5px;" /></view>
+                            <view id="list" class="weui-cell__bd weui-cell_primary">
+                                <view>意见反馈</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+          <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells weui-cells_in-small-appmsg">
+                        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="/images/icon/shezhi.png" style="width: 15px;height: 15px;margin-right: 5px;margin-top:5px;" /></view>
+                            <view id="list" class="weui-cell__bd weui-cell_primary">
+                                <view>设置</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="/images/icon/kuaidiyuan.png" style="width: 15px;height: 15px;margin-right: 5px;margin-top:5px" /></view>
+                            <view id="list" class="weui-cell__bd weui-cell_primary">
+                                <view>跑腿员招募</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="/images/icon/kefu.png" style="width: 15px;height:15px;margin-right: 5px;margin-top:5px" /></view>
+                            <view id="list" class="weui-cell__bd weui-cell_primary">
+                                <view>联系客服</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+</view>
+  </view>
+  

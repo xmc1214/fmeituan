@@ -1,0 +1,21 @@
+/* pages/index/index.wxss */
+
+.title{
+  font-size: 28rpx;
+  font-family: "微软雅黑";
+  margin-left: 170rpx;
+}
+.mainmap{
+  width: 100%;
+  height:600rpx;
+}
+
+.weui-footer{
+    margin-top: 15px;
+}
+
+.refresh{
+  position: relative;
+  top: 85%;
+  left: 90%;
+}

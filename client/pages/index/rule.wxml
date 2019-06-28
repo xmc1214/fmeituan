@@ -1,0 +1,80 @@
+<!--pages/index/rule.wxml-->
+<!--pages/teach/message2.wxml-->
+<view class="page">
+
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__section">
+        <view class="weui-article__h1">里程费</view>
+        <view class="weui-article__section">
+          <view class="weui-article__p">
+            3公里内:12元
+          </view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__p">
+            3-10公里:2.0元/公里
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-article__section">
+
+        <view class="weui-article__p">
+          超过10公里:2.5元/公里
+        </view>
+      </view>
+      <view class="weui-article__section">
+        <view class="weui-article__h1">OFFICE订单费</view>
+        <view class="weui-article__section">
+          <view class="weui-article__p">
+            5公里内:19元
+          </view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__p">
+            5-10公里:2.0元/公里
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-article__section">
+
+        <view class="weui-article__p">
+          超过10公里:2.5元/公里
+        </view>
+      </view>
+
+      <view class="weui-article__section">
+        <view class="weui-article__h1">排队费用</view>
+        <view class="weui-article__section">
+          <view class="weui-article__p">
+            起步价(含60分钟)20.0元
+          </view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__p">
+            1-10小时:15元/半小时
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-article__section">
+
+        <view class="weui-article__p">
+          延长排队(线下支付)15元/半小时
+        </view>
+      </view>
+      <view class="weui-article__section">
+        <view class="weui-article__h1">夜间服务费</view>
+        <view class="weui-article__section">
+          <view class="weui-article__p">
+            00:00-07:00每单加8元
+          </view>
+        </view>
+
+      </view>
+
+    </view>
+  </view>
+</view>

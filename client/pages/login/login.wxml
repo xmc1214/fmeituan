@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class="page">
+
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__section">
+       <view class="weui-article__p">
+                        <image class="weui-article__img" src="/images/logo.png" mode="aspectFit" style="height: 180px" />
+                    </view>
+</view>
+ 
+  <view id="shouquan"class="weui-article__section">
+       <view class="weui-article__p">
+                         <button id="queding" class="weui-btn" type='primary' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权微信用户信息</button>
+                    </view>
+</view>
+    </view>
+  </view>
+</view>
